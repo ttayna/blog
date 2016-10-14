@@ -1,0 +1,25 @@
+{
+  "blog_list": {
+    "path": "/",
+    "method": ["GET"],
+    "controller": "controllers\\DefaultController:listAction",
+    "view": "listBlog.html.twig"
+  },
+  "blog_create": {
+    "path": "/create",
+    "method": ["POST", "GET"],
+    "controller": "controllers\\DefaultController:createAction",
+    "view": "editBlog.html.twig"
+  },
+  "blog_edit": {
+    "path": "/edit/{id}",
+    "method": ["POST", "GET"],
+    "controller": "controllers\\DefaultController:editAction",
+    "view": "editBlog.html.twig"
+  },
+  "blog_delete": {
+    "path": "/delete/{id}",
+    "method": ["POST"],
+    "controller": "controllers\\DefaultController:deleteAction"
+  }
+}
